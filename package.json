@@ -1,0 +1,16 @@
+{
+  "name": "shipforge",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "apps/*",
+    "services/*",
+    "packages/*",
+    "workers/*"
+  ],
+  "scripts": {
+    "dev:api": "bun --filter @shipforge/api dev",
+    "db:migrate": "bun --filter @shipforge/database db:migrate",
+    "typecheck": "bun --filter '*' typecheck"
+  }
+}
