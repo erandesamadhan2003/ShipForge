@@ -11,6 +11,7 @@
   "scripts": {
     "dev:api": "bun --filter @shipforge/api dev",
     "db:migrate": "bun --filter @shipforge/database db:migrate",
-    "typecheck": "bun --filter '*' typecheck"
+    "typecheck": "bun --filter '*' typecheck",
+    "dev:web": "bun --filter @shipforge/web dev"
   }
 }
